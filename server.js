@@ -5,7 +5,7 @@ const bodyparser = require('body-parser')
 const path = require('path');
 const app = express();
 const connectDB = require('./server/database/connection')
-dotenv.config({path: 'config.env'})
+dotenv.config({path: '.env'})
 const PORT = process.env.PORT || 8080
 
 app.use(morgan('tiny'));

@@ -12,7 +12,7 @@ exports.create = (req,res)=>{
     const user = new User({
         name : req.body.name,
         email : req.body.email,
-        gender: req.body.gender,
+        roll: req.body.roll,
         status : req.body.status
     })
 
@@ -87,6 +87,8 @@ exports.update = (req, res)=>{
 // Delete a user with specified user id in the request
 exports.delete = (req, res)=>{
     const id = req.params.id;
+
+
 
     User.findByIdAndDelete(id)
         .then(data => {

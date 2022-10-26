@@ -9,7 +9,9 @@ const Schema = new mongoose.Schema({
         type: String, 
         required: true
     },
-    gender : String,
+    roll : {
+        type: String
+    },
     status : String
     
 })
